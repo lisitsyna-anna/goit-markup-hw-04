@@ -191,6 +191,7 @@ img {
 .hero {
   max-width: 1600px;
   height: 600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -250,8 +251,7 @@ img {
   line-height: 1.71;
 }
 
-.features-tumbth {
-  width: 270px;
+.features-thumb {
   height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
@@ -333,7 +333,7 @@ img {
 }
 
 .social-link {
-  display: inline-block;
+  display: flex;
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -359,7 +359,7 @@ img {
   margin-right: 30px;
 }
 .clients-link {
-  display: block;
+  display: flex;
   padding: 16px 32px;
   width: 170px;
   height: 92px;
@@ -421,7 +421,7 @@ img {
 
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .container-address {
@@ -537,14 +537,15 @@ img {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.work-list .item:hover,
-.work-list .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.work-link {
+  display: block;
+  text-decoration: none;
 }
 
-.work-link {
-  text-decoration: none;
+.work-link:hover,
+.work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-title {
