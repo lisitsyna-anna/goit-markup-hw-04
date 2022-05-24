@@ -334,9 +334,10 @@ img {
 
 .social-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
   color: #afb1b8;
 }
@@ -360,7 +361,8 @@ img {
 }
 .clients-link {
   display: flex;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -493,11 +495,6 @@ img {
 
   line-height: 1.62;
   letter-spacing: 0.03em;
-}
-
-.button.secondary.current {
-  color: var(--primery-white-color);
-  background-color: var(--accent-color);
 }
 
 .button.secondary:hover,
