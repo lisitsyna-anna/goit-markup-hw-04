@@ -148,9 +148,20 @@ img {
 }
 
 .site-nav .link.current {
+  position: relative;
   color: var(--accent-color);
 }
 
+.site-nav .link.current::after {
+  position: absolute;
+  bottom: -1px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
 /* --------------------------------КОНТАКТЫ В ШАПКЕ ПРОФИЛЯ------------------------------- */
 .contacts-nav {
   display: flex;
@@ -269,12 +280,32 @@ img {
 }
 
 .our-work-list .item {
+  position: relative;
+
   margin-right: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
 
 .our-work-list .item:nth-child(3n) {
   margin-right: 0;
+}
+
+.our-work-text {
+  position: absolute;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primery-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* --------------------------------НАША КОМАНДА------------------------------- */
@@ -566,4 +597,22 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+.work-thumb {
+  position: relative;
+}
+
+.work-item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--primery-text-color);
 }
